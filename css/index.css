@@ -1,11 +1,51 @@
-header .top{    margin: 0 auto; width: 1200px;}
+header .top{    margin: 0 auto; width: 1200px; padding:0 0 26px;}
 header .top h1{    float: left; padding:33px 0 0 ;}
 header .top h1 a:first-child{    margin-right: 28px;}
 header .top > div{    float: right; font-size: 16px; color: #333; font-weight: normal;} 
-header .control{padding:31px 0 0;}
+header .control{padding:31px 24px 0 0; float: left;}
 header .control h2{    float: left; }
 header .control ul{    float: left; padding:0 0 0 4px;}
 header .control li{    float: left; padding:0 0 0 4px;}
 header .control li button{ font-size: 14px; color: #3190ce;  background: #fff; border: 1px solid #dfdfdf;
     height: 36px; border-radius: 36px; min-width: 36px; padding: 0 16px; box-sizing: border-box;}
 header .control li button[class]{padding:0;}
+header .sns{float: left; position: relative; padding: 27px 0 0 7px;}
+header .sns::before{content: ""; position: absolute; left: 0; top:35px; width: 1px; height: 30px; background: #e3e3e3;}
+header .sns li{float: left; padding:0 0 0 12px;}  
+header .sns li img{width: 46px;}
+
+header .btm{border-top: 1px solid #ededed; border-bottom: 1px solid #ededed;}
+header .btm > div{margin: 0 auto; width: 1200px;}
+header .btm .lnb{float: left;}
+header .btm .lnb li{float: left;}
+header .btm .lnb a{display: block; height: 59px; line-height:59px; padding: 0 40px; font-size:22px; color: #333;}
+header .btm .spot *{vertical-align: middle;}
+header .btm .spot{float: right; font-size: 0;}
+header .btm .spot a{display: inline-block; position: relative; padding: 0 25px; line-height: 59px; font-size:15px; color: #666;}
+header .btm .spot a~a::before{content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 1px; height: 10px; background: #e3e3e3;}
+header .btm .spot button{width: 59px; height: 59px; background: none; color: #0066b3; font-size:26px;}
+/* 콘텐츠 공통디자인 */
+.block > div{margin: 0 auto; padding:100px 0 0; width: 1200px;}
+.block .tit{text-align: center;}
+.block .tit h2{padding:0 0 28px; font-size: 38px; color: #333; line-height:1;}
+.block .tit p{ padding: 0 0 40px; font-size: 21px; color: #666; line-height:1;}
+/* 금융서비스 */
+.service .banner > div { width: 580px; color: #fff;}
+.service .banner .left{ float: left; background: url(../images/0032831001568613184.jpg) no-repeat;}
+.service .banner .left div { float: right; background: linear-gradient(to right, #3194d5, #4fb2f6);}
+.service .banner .right { float:right; background: url(../images/0032831001568613184.jpg) no-repeat right top;}
+.service .banner .right div { background: linear-gradient(to right, #334da4, #3c62b3);}
+.service .banner div div{ padding: 37px 0 0; width: 290px; height: 280px; box-sizing: border-box; text-align: center; } 
+.service .banner > div h3 { font-size: 23px; line-height: 31px;}
+.service .banner > div p { padding: 12px 0 15px; font-size: 13px; line-height: 24px;}
+.service .banner > div a { display: block; margin:0 auto; width: 140px; background: #064ca2; border-radius: 7px; line-height: 40px; color: #fff; }
+
+.service .btm > article { position: relative; margin: 38px 0 0; width: 580px;}
+.service .btm h3 { padding: 0 0 28px; font-size: 26px; color: #333;}
+.service .event { float: left;}
+.service .recom { float: right;}
+.service .event img { width: 100%;}
+
+.btn_more { position: absolute; right: 0; top: 0; width: 136px; line-height: 38px; border: 1px solid #cdcdcd; border-radius: 4px; 
+    text-align: center; font-size: 16px; color: #8a8a8a}
+.btn_more::after { content: url(../images/sBtn_next3.png); margin: 0 0 0 8px; vertical-align: -6px;}
